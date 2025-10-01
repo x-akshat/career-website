@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-  <title>PRESCRIPTO</title>
+  <title>AKSHAT CHARIYA</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
@@ -13,13 +13,16 @@
   </style>
 </head>
   <body>
+    {%include "nav.html"%}
     <div class="container">
-    <h1 class="text-center mt-2 mb-4"> {{company_name}} PRESCRIPTO</h1>
-     <img class="img-fluid" id="banner" src="https://6879072d-a629-4ac3-b1b0-d2863d56c06f-00-2amd2sm44jnpf.sisko.replit.dev/static/banner.jpg" > 
-    <h2 class="text-center  mt-2 mb-4">About PRESCRIPTO</h2>
-    <p class="lead"> Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+    <h1 class="text-center mt-2 mb-4"> {{company_name}} CHARIYA</h1>
+     <img class="img-fluid" id="banner" src="https://images.unsplash.com/photo-1666615435088-4865bf5ed3fd?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="banner" > 
+    <h2 class="text-center  mt-2 mb-4">About Me</h2>
+    <p class="lead"> "I’m Akshat Chariya, a final-year B.Tech CSE student passionate about cybersecurity, ethical hacking, and networking. Currently preparing for CEH and CCNA certifications, I enjoy exploring Capture The Flag (CTF) challenges, vulnerable machines, and building real-world projects like secure file transfer systems.
+
+      Alongside my technical journey, I create gaming and tech content to make learning both fun and engaging. My goal is to combine creativity, problem-solving, and technology to grow as a cybersecurity professional while inspiring others along the way."
 </p>
-    <h2 class="text-center mt-2 mb-4">AVAILABLE DOCTORS</h2>
+    <h2 class="text-center mt-2 mb-4">CONNECT ME</h2>
       <p>
         
       {% for job in jobs %}
@@ -28,9 +31,10 @@
       </p>
     
       <div class="text-center">
-<button class="btn btn-primary btn-lg">Contact Us</button>   
-        <p class="mt-4">Copyright 2025, SA</p>
+<button class="btn btn-primary btn-lg">Contact ME</button>   
+        <p class="mt-4">Copyright 2025, AKSHAT CHARIYA</p>
        </div>
       </div>
+    {%include "footer.html"%}
   </body>
 </html>

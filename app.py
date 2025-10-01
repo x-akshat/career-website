@@ -5,25 +5,25 @@ app = Flask(__name__)
 JOBS= [
    {
       "id": 1,
-      "title": "DOCTOR 1",
-      "location": "Bengaluru, India",
+      "title": "INSTAGRAM",
+      "Search": "Akshatchariya_",
       "FEES": "Rs. 1,000"
    },
    {
       "id": 2,
-      "title": "DOCTOR 2",
-      "location": "Delhi, India",
+      "title": "GitHub",
+      "Search": "x-akshat",
       "salary": "Rs. 1,500"
    },
    {
       "id": 3,
-      "title": "DOCTOR 3",
-      "location": "New delhi"
+      "title": "LinkedIn",
+      "Search": "akshat-chariya-4910a9369"
    },
    {
       "id": 4,
-      "title": "Doctor 4",
-      "location": "AGRA",
+      "title": "YouTube",
+      "Search": "HACKERISLIVE_",
       "salary": "Rs. 800"
    }
 ]
@@ -32,7 +32,7 @@ JOBS= [
 def hello_world():
    return render_template("home.html",
                           jobs=JOBS,                 
-                          company_name='SA')
+                          company_name='AKSHAT')
 
 @app.route("/api/jobs")
 def list_jobs():
