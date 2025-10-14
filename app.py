@@ -7,13 +7,13 @@ JOBS= [
       "id": 1,
       "title": "INSTAGRAM",
       "Search": "Akshatchariya_",
-      "FEES": "Rs. 1,000"
+      
    },
    {
       "id": 2,
       "title": "GitHub",
       "Search": "x-akshat",
-      "salary": "Rs. 1,500"
+      
    },
    {
       "id": 3,
@@ -24,7 +24,7 @@ JOBS= [
       "id": 4,
       "title": "YouTube",
       "Search": "HACKERISLIVE_",
-      "salary": "Rs. 800"
+      
    }
 ]
   

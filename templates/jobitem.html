@@ -1,19 +1,34 @@
-<div class="border-bottom row" style="margin-bottom: 16px; padding-bottom: 8px; ">
-  <div class="col-10">
-  <h4 
-    style="color: rgb(120,120,120); margin-bottom: 4px;">
-    {{job["title"]}}
-  </h4> 
-    <div>
-      <b>SEARCH:</b>
-      {{job["Search"]}}   
-   </div>
-      {% if "salary" in job %}
-  
-   {% endif %}
-    </div>
-  <div class= "col-2">
- 
-  <button type="button" class="btn btn-outline-primary">Search</button>
+<div class="card m-2" style="width: 16rem; display: inline-block; vertical-align: top;">
+  <div class="card-body text-center">
+    <h5 class="card-title">{{ job.title }}</h5>
+    
+    <!-- Search / Social button -->
+    {% if job.Search %}
+      <button 
+        class="btn btn-outline-primary btn-sm mb-2"
+        onclick="
+          {% if job.title.lower() == 'instagram' %}
+            window.open('https://instagram.com/Akshatchariya_', '_blank');
+          {% elif job.title.lower() == 'github' %}
+            window.open('https://github.com/x-akshat', '_blank');
+          {% elif job.title.lower() == 'linkedin' %}
+            window.open('https://linkedin.com/in/akshat-chariya-4910a9369', '_blank');
+          {% elif job.title.lower() == 'youtube' %}
+            window.open('https://youtube.com/@HACKERISLIVE_', '_blank');
+          {% else %}
+            alert('No link available');
+          {% endif %}
+        "
+      >
+        Search
+      </button>
+    {% endif %}
+    
+    <!-- Fees / Salary info -->
+    {% if job.FEES %}
+      <p class="card-text mt-1">{{ job.FEES }}</p>
+    {% elif job.salary %}
+      <p class="card-text mt-1">{{ job.salary }}</p>
+    {% endif %}
   </div>
 </div>

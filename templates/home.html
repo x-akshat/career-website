@@ -12,29 +12,34 @@
     }
   </style>
 </head>
-  <body>
-    {%include "nav.html"%}
-    <div class="container">
-    <h1 class="text-center mt-2 mb-4"> {{company_name}} CHARIYA</h1>
-     <img class="img-fluid" id="banner" src="https://images.unsplash.com/photo-1666615435088-4865bf5ed3fd?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="banner" > 
-    <h2 class="text-center  mt-2 mb-4">About Me</h2>
-    <p class="lead"> "I’m Akshat Chariya, a final-year B.Tech CSE student passionate about cybersecurity, ethical hacking, and networking. Currently preparing for CEH and CCNA certifications, I enjoy exploring Capture The Flag (CTF) challenges, vulnerable machines, and building real-world projects like secure file transfer systems.
+<body>
+  {% include "nav.html" %}
+  
+  <div class="container">
+    <h1 class="text-center mt-2 mb-4">{{company_name}} CHARIYA</h1>
+      
+    <img class="img-fluid" id="banner" src="https://images.unsplash.com/photo-1666615435088-4865bf5ed3fd?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="banner">
+
+    <h2 class="text-center mt-2 mb-4">About Me</h2>
+    <p class="lead">
+      "I’m Akshat Chariya, a final-year B.Tech CSE student passionate about cybersecurity, ethical hacking, and networking. Currently preparing for CEH and CCNA certifications, I enjoy exploring Capture The Flag (CTF) challenges, vulnerable machines, and building real-world projects like secure file transfer systems.
 
       Alongside my technical journey, I create gaming and tech content to make learning both fun and engaging. My goal is to combine creativity, problem-solving, and technology to grow as a cybersecurity professional while inspiring others along the way."
-</p>
+    </p>
+
     <h2 class="text-center mt-2 mb-4">CONNECT ME</h2>
-      <p>
-        
+    <p>
       {% for job in jobs %}
-       {%include "jobitem.html"%}
+        {% include "jobitem.html" %}
       {% endfor %}
-      </p>
-    
-      <div class="text-center">
-<button class="btn btn-primary btn-lg">Contact ME</button>   
-        <p class="mt-4">Copyright 2025, AKSHAT CHARIYA</p>
-       </div>
-      </div>
-    {%include "footer.html"%}
-  </body>
+    </p>
+
+    <div class="text-center">
+      <button class="btn btn-primary btn-lg">Contact ME</button>   
+      <p class="mt-4">Copyright 2025, AKSHAT CHARIYA</p>
+    </div>
+  </div>
+
+  {% include "footer.html" %}
+</body>
 </html>

@@ -1,0 +1,24 @@
+/* Hover effect for search buttons */
+.search-btn {
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.search-btn:hover {
+  transform: scale(1.1) rotate(-2deg);
+  background-color: #0d6efd; /* Bootstrap primary color */
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+/* Example: Card spacing */
+.card {
+  margin: 10px;
+}
+
+/* Optional: center CONNECT ME section */
+.connect-me-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
